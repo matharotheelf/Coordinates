@@ -8,7 +8,7 @@ class ofApp : public ofBaseApp{
 	public:
         ofVec2f velocity;
         ofVec2f position;
-        static constexpr int PARTICLETOTALCOUNT = 100;
+        static constexpr int PARTICLETOTALCOUNT = 1000;
         Particle particles[PARTICLETOTALCOUNT];
     
 		void setup() override;

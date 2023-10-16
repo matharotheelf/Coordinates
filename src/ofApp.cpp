@@ -9,7 +9,7 @@ void ofApp::setup(){
     for (int index = 0; index < PARTICLETOTALCOUNT; index++)
      {
          Particle particle;
-         particle.position = glm::vec2(512, 384);
+         particle.position = glm::vec2(ofGetScreenWidth()*index/PARTICLETOTALCOUNT, ofGetScreenHeight()*index/PARTICLETOTALCOUNT);
          particle.velocity = glm::vec2(rand() % 20 - 10, rand() % 20 - 10);
          particles[index] = particle;
      }

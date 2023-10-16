@@ -5,8 +5,14 @@ void ofApp::setup(){
     ofSetBackgroundColor(255,255,0);
     position.set(512, 384);
     ofSetColor(0x000000);
-    particle.position = glm::vec2(512, 384);
-    particle.velocity = glm::vec2(rand() % 10 + 1, rand() % 10 + 1);
+    
+    for (int index = 0; index < PARTICLETOTALCOUNT; index++)
+     {
+         Particle particle;
+         particle.position = glm::vec2(512, 384);
+         particle.velocity = glm::vec2(rand() % 20 - 10, rand() % 20 - 10);
+         particles[index] = particle;
+     }
 }
 
 //--------------------------------------------------------------
@@ -15,10 +21,11 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    particle.Process();
-    particle.Draw();
+    for (int particleNumber = 0; particleNumber < PARTICLETOTALCOUNT; particleNumber++) {
+        particles[particleNumber].Process();
+        particles[particleNumber].Draw();
+    }
 }
-
 //--------------------------------------------------------------
 void ofApp::exit(){
 

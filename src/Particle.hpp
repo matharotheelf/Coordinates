@@ -17,6 +17,7 @@ class Particle {
     ofVec2f velocity;
     void Draw();
     void Process();
+    ofPolyline helloWorldShape;
 };
 
 #endif /* Particle_hpp */

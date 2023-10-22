@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A17C176B2AE323DB00EDCC34 /* WordMass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A17C17692AE323DA00EDCC34 /* WordMass.cpp */; };
 		A1CC4BAB2ADD62C100469552 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1CC4BA92ADD62C100469552 /* Particle.cpp */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -36,6 +37,8 @@
 /* Begin PBXFileReference section */
 		191CD6FA2847E21E0085CBB6 /* of.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = of.entitlements; sourceTree = "<group>"; };
 		191EF70929D778A400F35F26 /* openFrameworks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = openFrameworks; path = ../../../libs/openFrameworks; sourceTree = SOURCE_ROOT; };
+		A17C17692AE323DA00EDCC34 /* WordMass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WordMass.cpp; sourceTree = "<group>"; };
+		A17C176A2AE323DA00EDCC34 /* WordMass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WordMass.hpp; sourceTree = "<group>"; };
 		A1CC4BA92ADD62C100469552 /* Particle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		A1CC4BAA2ADD62C100469552 /* Particle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
 		E4B69B5B0A3A1756003C02F2 /* CoordinatesDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatesDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +89,8 @@
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 				A1CC4BA92ADD62C100469552 /* Particle.cpp */,
 				A1CC4BAA2ADD62C100469552 /* Particle.hpp */,
+				A17C17692AE323DA00EDCC34 /* WordMass.cpp */,
+				A17C176A2AE323DA00EDCC34 /* WordMass.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -182,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				A17C176B2AE323DB00EDCC34 /* WordMass.cpp in Sources */,
 				A1CC4BAB2ADD62C100469552 /* Particle.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 			);

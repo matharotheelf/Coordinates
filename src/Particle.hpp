@@ -9,6 +9,7 @@
 #define Particle_hpp
 
 #include "ofMain.h"
+#include "WordMass.hpp"
 #include <stdio.h>
 
 class Particle {
@@ -17,7 +18,7 @@ class Particle {
     ofVec2f velocity;
     void Draw();
     void Process();
-    ofPolyline helloWorldShape;
+    void Collide(vector<WordMass> &wordMasses);
 };
 
 #endif /* Particle_hpp */

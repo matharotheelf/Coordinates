@@ -15,3 +15,15 @@ void Particle::Draw()
     {
         ofDrawCircle(position, 5);
     }
+
+void Particle::Collide(vector<WordMass> &wordMasses)
+    {
+        if(velocity.length() != 0) {
+            for(WordMass wordMass: wordMasses) {
+                if(position.distance(wordMass.position) < 10){
+                    velocity.set(0, 0);
+                    return;
+                }
+            }
+        }
+    }
